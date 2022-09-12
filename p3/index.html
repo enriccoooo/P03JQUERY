@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="5best.css">
+  <title>P03 JQUERY</title>
+</head>
+<body>
+ <h1> DAFTAR KAWAN BEST </h1>
+  <center><p>NAMA : MUHAMMAD ENRICCO R <br> NIM : 41215511
+  </p></center>
+
+<table>
+  <tr>
+    <th width="8%">NO</th>
+    <th width="20%">NAMA</th>
+    <th width="40%">ALAMAT</th>
+    <th width="10%">AKSI</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td class="text" id="nama1">ANDI HERMAWAN</td>
+    <td class="text" id="alamat1" >GANG SUKASARI WAHIDIN</td>
+    <td class="text" id="hps1">HAPUS</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="text" id="nama2">IBNU FAJRI</td>
+    <td class="text" id="alamat2">MUNDU</td>
+    <td class="text" id="hps2">HAPUS</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="text" id="nama3">ARIF</td>
+    <td class="text" id="alamat3">MAJASEM</td>
+    <td class="text" id="hps3">HAPUS</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="text" id="nama4">ATHAR</td>
+    <td class="text" id="alamat4">SUMBER</td>
+    <td class="text" id="hps4">HAPUS</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="text" id="nama5">KEVIN</td>
+    <td class="text" id="alamat5">MAJASEM</td>
+   <td class="text" id="hps5">HAPUS</td>
+</tr>
+</table>
+  </div>
+  <div class ="pencet">
+    <a onclick="alert('Kembali?')" href="../index.html"><button>Kembali?</button></a>
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+ $(document).ready(function(){ $('.text').click(function(){ 
+  let text = $(this).text();
+  alert(`Anda mengklik text yang berisi text "${text}"`);
+   if(text!='HAPUS'){ 
+    let text2 = prompt('Mau diubah?:', text);
+    if(!text2) return; $(this).text(text2); }
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
+</script>
+
+
+</body>
+</html>
