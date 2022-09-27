@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="enrico.css">
+<head>
+	<title>FORM CSS RESPONSIIVE</title>
+</head>
+<body>
+	<div class="container">
+		<img src="ikmi.png">
+		<h1>STMIK IKMI KOTA CIREBON</h1>
+		<p>CEK PENDAFTARAN MAHASISWA BARU STMIK IKMI KOTA CIREBON</p>
+		<form>
+		<div class="row">
+			<div class="column">
+				<label for="no_pendaftaran">Nomor pendaftaran</label>
+				<input type="text" id="no_pendaftaran"name="no_pendaftaran" placeholder="Nomor pendaftaran" >
+			</div>
+				<div class="column">
+				<label for="nama_lengkap">Nama Lengkap</label>
+				<input type="text" id="nama_lengkap"name="nama_lengkap" placeholder="Nama Lengkap" >
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<label for="tanggal_ujian">Tanggal Ujian</label>
+				<input type="date" id="tanggal_ujian" name="tanggal_ujian">
+			</div>
+				<div class="column">
+				<label for="jk">Jenis Kelamin</label>
+				<select id="jk" name="jk">
+					<option value="none">----PILIH JENIS KELAMIN----</option>
+					<option value="laki_laki">LAKI-LAKI</option>
+					<option value="perempuan">PEREMPUAN</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<label for="jenjang">Jenjang</label>
+				<select id="jenjang" name="jenjang">
+					<option value="none">----PILIH JENJANG----</option>
+					<option value="diploma3">DIPLOMA III</option>
+					<option value="s1">S1 STRATA 1</option>
+				</select>
+			</div>
+				<div class="column">
+				<label for="prodi">Program Studi</label>
+				<select id="prodi" name="prodi">
+					<option value="none">----PILIH PRODI----</option>
+					<option value="ti">Teknik Informatika</option>
+					<option value="rpl">Rekayasa Perangkat Lunak</option>
+				</select>
+			</div>
+		</div>
+		<div class="tombol">
+			<button type="submit">Kirim</button>
+			<button type="button" onclick="document.location.href='../index.html'">Kembali</button>
+		</div>
+		</form>
+	</div>
+
+</body>
+</html>
