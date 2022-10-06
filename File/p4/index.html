@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="10best.css">
+	<title>DAFTAR 10 KAWAN</title>
+</head>
+<body>
+	<h1>TOP BEST 10 KAWAN - MUHAMMAD ENRICCO RIZQY 41215511</h1>
+	<table border="colapse">
+		<th>NO</th>
+		<th>NAMA</th>
+		<th>ALAMAT</th>
+		<th colspan="10">AKSI</th>
+		<tr>
+			<td>1</td>
+			<td class="text">INDAH RATNA NINGSIH</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td class="text">ANDI HERMAWAN</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td class="text">IBNU FAJRI</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td class="text">ATHAR</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td class="text">MUHAMAD ARIF</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td class="text">KEVIN</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td class="text">IKE SURYANI</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td class="text">HILDA NOVIA</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td class="text">NAUFAL</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td class="text">RIVALDI</td>
+			<td class="text">KOTA CIREBON</td>
+			<td class="text">EDIT</td>
+			<td class="text">HAPUS</td>
+		</tr>
+	</table>
+	<a onclick="confirm('Yakin Kambali?')" href="../index.html"><button>Kembali?</button></a>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script>
+	 $(document).ready(function(){ $('.text').click(function(){ 
+	  let text = $(this).text();
+	  alert(`Anda mengklik text yang berisi text "${text}"`);
+	   if(text!='HAPUS'){ 
+	    let text2 = prompt('Mau diubah?:', text);
+	    if(!text2) return; $(this).text(text2); }
+	    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
+	</script>
+
+</body>
+</html>

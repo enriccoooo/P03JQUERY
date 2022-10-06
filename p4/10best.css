@@ -1,0 +1,30 @@
+body{
+	background-color: #485460;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 120px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+	text-align: center;
+	font-family: courier,sans-serief;
+	color: #0be881;
+}
+button{
+  	font-family:courier;
+  background-color:#05c46b;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 44%;  
+}
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="enricco.css">
+	<title>FORM IKMI BASIC CSS</title>
+</head>
+<body>
+	<div class="contain">
+		<div class="head">
+			 <img src="ikmi.png" alt="image" height="100" width="100" align="left">
+				        <h1><center>SEKOLAH TINGGI MANAJEMEN INFORMATIKA DAN KOMPUTER IKMI CIREBON</center></h1>
+			</div>
+			<div class="konten">
+				<h1>FORMULIR PENDAFTARAN</h1>
+				<form action="" method="post">
+					<table>
+						<th>
+						<tr>
+							<td>Nomor Pendaftaran : </td>
+							<td><input type="text" name="nomor_pendaftaran" id="nomor_pendaftaran" placeholder="Nomor Pendaftaran"></td>
+						</tr>
+						<tr>
+							<td>Nama Lengkap : </td>
+							<td><input type="text" name="nama_lengkap" id="nama_lengkap" placeholder="Nama Lengkap"></td>
+						</tr>
+						<tr>
+								<td>Tanggal Ujian : </td>
+								<td><input type="date" name="tanggal_ujian" id="tanggal_ujian"></td>
+						</tr>
+						<tr>
+							<td>Jenis kelamin : </td>
+            				<td><select>
+            					<option value="--------------">------------------</option>
+            					<option value="laki_laki">LAKI-LAKI</option>
+            					<option value="perempuan">PEREMPUAN</option>
+            				</select></td>
+            			</tr>
+            			<tr>
+            				<td>Jenjang :</td>
+            				<td><input type="text" name="jenjang" id="jenjang" placeholder="Jenjang"></td>
+            			</tr>
+            			<tr>
+            				<td>Program Studi : </td>
+            				<td><select>
+            					<option value="--------------">------------------</option>
+            					<option value="TI">Teknik Informatika</option>
+            					<option value="RPL">Rekayasa Perangkat Lunak</option>
+            					<option value="MI">Manajemen Informatika</option>
+            				</select></td>
+            			</tr>
+            			
+						</th>
+					</table>
+					<div class="tombol">
+						<button type="submit">Kirim</button>
+						<button type="button" onclick="document.location.href='../index.html'">Kembali</button>
+					</div>
+					
+				</form>
+				</div>
+		
+	</div>
+</body>
+</html
+
+
+
+.row{ /
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr  ));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}

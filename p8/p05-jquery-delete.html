@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="rico.css">
+<head>
+	<title>P05-JQUERY-DELETE</title>
+</head>
+<body>
+	<div class="container">
+		<h1>5 MY FRIENDS</h1>
+		<div class="table">
+			<table>
+				<th>NO</th>
+				<th>NAMA</th>
+				<th>PRODI</th>
+				<th>ALAMAT</th>
+				<th>AKSI</th>
+				<tr id="row__1">
+					<td class="no">1</td>
+					<td class="nama">ANDI HERMMAWAN</td>
+					<td class="prodi">TEKNIK INFORMATIKA</td>
+					<td class="alamat">WAHIDIN,SUKASARI,KOTA CIREBON</td>
+					<td class="hapus" id="hapus__1">HAPUS</td>
+				</tr>
+				<tr id="row__2">
+					<td class="no">2</td>
+					<td class="nama">MUHAMMAD ARIF</td>
+					<td class="prodi">TEKNIK INFORMATIKA</td>
+					<td class="alamat">MAJASEM,KOTA CIREBON</td>
+					<td class="hapus" id="hapus__2">HAPUS</td>
+				</tr>
+				<tr id="row__3">
+					<td class="no">3</td>
+					<td class="nama">IBNU FAJAR</td>
+					<td class="prodi">TEKNIK INFORMATIKA</td>
+					<td class="alamat">MUNDU,LUWUNG,KAB CIREBON</td>
+					<td class="hapus" id="hapus__3">HAPUS</td>
+				</tr>
+				<tr id="row__4">
+					<td class="no">4</td>
+					<td class="nama">INDAH RATNA NINGSIH</td>
+					<td class="prodi">TEKNIK INFORMATIKA</td>
+					<td class="alamat">JAGASATRU,KOTA CIREBON</td>
+					<td class="hapus" id="hapus__4">HAPUS</td>
+				</tr>
+				<tr id="row__5">
+					<td class="no">5</td>
+					<td class="nama">KEVIN</td>
+					<td class="prodi">TEKNIK INFORMATIKA</td>
+					<td class="alamat">KOTA CIREBON</td>
+					<td class="hapus" id="hapus__5">HAPUS</td>
+				</tr>
+			</table>
+		</div>
+		<div class="tombol">
+<button type="button" onclick="document.location.href='../index.html'">Kembali</button>
+</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	$(document).ready(function(){
+   $('.nama').click(function(){
+     let nama_isi = $(this).text();
+     let nama_isi2 = prompt('Apakah anda ingin mengubahnya?:',nama_isi);
+     if(!nama_isi2) return;
+ 
+
+     $(this).text(nama_isi2);
+   })
+
+   $('.alamat').click(function(){
+     let alamat1 = $(this).text();
+     let alamat2 = prompt('Apakah anda ingin mengubahnya?:',alamat1);
+     if(!alamat2) return;
+ 
+
+     $(this).text(alamat2);
+   })
+ $('.prodi').click(function(){
+     let prodi = $(this).text();
+     let prodi2 = prompt('Apakah anda ingin mengubahnya?:',prodi);
+     if(!prodi2) return;
+ 
+
+     $(this).text(prodi2);
+   })
+
+
+   $('.hapus').click(function(){
+    let betul = confirm('Anda yakin ingin menghapusnya?');
+    if(!betul) return;
+    let id = $(this).prop('id')
+    let rid = id.split('__');
+    let baris_ke = rid[1];
+    $('#row__'+baris_ke).slideUp()
+   })
+
+ })	
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.head{
+	width: 600px;
+	margin: auto;
+	border:2px solid black;
+	background-color: blue;
+	padding: 15px 0;
+}
+h1{
+	text-align: center;
+	font-family: courier;
+	color: black;
+}
+.konten{
+	width: 600px;
+	margin: auto;
+	border: 1px solid black;
+	padding: 20px;
+	box-sizing: border-box;
+}
+input,select{
+	width: 100%;
+	font-weight: 400;
+	padding: 8px 10px;
+	border-radius: 5px
+	border:1.2px solid;
+
+}
+button{
+	border: none;
+	padding: 10px 20px;
+	background: linear-gradient(
+        #6f6df4,
+        #b1aeee
+    );
+	color: #ffffff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+
+
+/* untuk di p7 new css
+textarea resize none
+textarea:fokus,
+input:fokus{
+    outline: none;
+    border-color: #6f6df4;
+    textarea, di input
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+background: linear-gradient(
+        135deg,
+        #6f6df4,
+        #4c46f5
+    );
+
+*/

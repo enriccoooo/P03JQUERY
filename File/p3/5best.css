@@ -1,0 +1,41 @@
+
+body{
+    background-color: #7ed6df;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+  font-family:courier;
+  background-color:#05c46b;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 47%;  
+
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #686de0;
+  text-align: left;
+  padding: 8px;
+}
+
+}
+
+tr:nth-child(even) {
+  background-color: #686de0;
+}

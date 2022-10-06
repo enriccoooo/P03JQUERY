@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="enricco.css">
+	<title>SPA</title>
+</head>
+<body>
+	<div class="container"> 
+		<nav class="wrapper">
+			<div class="brand">
+				<div class="firstname" onclick="document.location.href='../index.html'">Enricco</div>
+				<div class="lastname" onclick="document.location.href='../index.html'">Rizqy</div>
+			</div>
+				<ul class="navigation">
+				<li><a href="#beranda" class="active">Beranda</a></li>
+				<li><a href="#tentangsaya" class="active">Tentang Saya</a></li>
+				<li><a href="#kontak"  class="active">Kontak</a></li>
+			</ul>
+		</nav>
+		<div class="konten">
+		<div id="isikonten">
+        <div id="beranda" class="isi__1">Single Page Application yaitu sebuah konsep aplikasi web yang memiliki satu halaman saja.</div>
+        <div id="tentangsaya" class="isi__2">Nama saya Muhammad Enricco Rizqy , lahir di Kota Cirebon.</div>
+        <div id="kontak" class="isi__3">@__icooo</div>
+      </div>
+      </div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function () {
+  var currentSection = 0;
+  $("#konten").hide();
+  $("li a").click(function () {
+    $("li a").removeClass("active");
+    $(this).addClass("active");
+
+    var href = $(this).attr("href");
+    $("#isikonten>div").hide();
+
+    $(href).show();
+
+    if (currentSection == 0) {
+      $("#konten").slideToggle(200);
+      currentSection = href;
+    } else if (currentSection == href) {
+      $("#konten").slideToggle(200);
+      currentSection = 0;
+    } else {
+      currentSection = href;
+    }
+    return false;
+  });
+});
+</script>
+
+</body>
+</html>
